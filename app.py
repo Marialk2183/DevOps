@@ -1,3 +1,5 @@
-@app.route('/api')
-def api():
-    return jsonify({"message": "Updated from Marialk2183_new branch"})
+from flask import render_template
+
+@app.route('/')
+def todo_form():
+    return render_template('index.html')
